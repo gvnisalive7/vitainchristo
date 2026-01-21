@@ -1,81 +1,165 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Februari 2026</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vita in Christo</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
-      font-family: Inter, sans-serif;
-      background: #f5f7fa;
       margin: 0;
-      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #1f2937;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .weeks {
-      max-width: 500px;
-      margin: auto;
-      display: grid;
-      gap: 1rem;
-    }
-
-    .week {
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    .available {
+    header {
       background: white;
-      color: #111827;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      padding: 2.5rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
     }
 
-    .available:hover {
-      background: #e5e7eb;
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 2rem;
     }
 
-    .unavailable {
-      background: #e5e7eb;
-      color: #9ca3af;
-      cursor: not-allowed;
+    header p {
+      margin-top: 0.6rem;
+      color: #6b7280;
+      font-size: 1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.6rem;
+    }
+
+    .month {
+      background: white;
+      border-radius: 14px;
+      padding: 2.2rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .month:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+    }
+
+    .month h2 {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    .year {
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: #6b7280;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Februari 2026</h1>
+  <header>
+    <h1>Vita in Christo</h1>
+    <p>Renungan Kristiani · Tahun Liturgi 2026</p>
+  </header>
 
-  <div class="weeks">
+  <main>
+    <div class="grid">
 
-    <!-- Week 1 ADA -->
-    <a class="week available" href="../pdf/2026februari1.pdf" target="_blank">
-      Week 1
-    </a>
+      <a href="pdf/jan2026.pdf" class="month" target="_blank">
+        <h2>Januari</h2>
+        <div class="year">2026</div>
+      </a>
 
-    <!-- Week 2 BELUM ADA -->
-    <div class="week unavailable">
-      Week 2 (Unavailable)
+      <a href="pdf/feb2026.pdf" class="month" target="_blank">
+        <h2>Februari</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/mar2026.pdf" class="month" target="_blank">
+        <h2>Maret</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/apr2026.pdf" class="month" target="_blank">
+        <h2>April</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/mei2026.pdf" class="month" target="_blank">
+        <h2>Mei</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/jun2026.pdf" class="month" target="_blank">
+        <h2>Juni</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/jul2026.pdf" class="month" target="_blank">
+        <h2>Juli</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/agu2026.pdf" class="month" target="_blank">
+        <h2>Agustus</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/sep2026.pdf" class="month" target="_blank">
+        <h2>September</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/okt2026.pdf" class="month" target="_blank">
+        <h2>Oktober</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/nov2026.pdf" class="month" target="_blank">
+        <h2>November</h2>
+        <div class="year">2026</div>
+      </a>
+
+      <a href="pdf/des2026.pdf" class="month" target="_blank">
+        <h2>Desember</h2>
+        <div class="year">2026</div>
+      </a>
+
     </div>
+  </main>
 
-    <div class="week unavailable">
-      Week 3 (Unavailable)
-    </div>
-
-    <div class="week unavailable">
-      Week 4 (Unavailable)
-    </div>
-
-  </div>
+  <footer>
+    © 2026 Vita in Christo · Semua untuk kemuliaan Allah
+  </footer>
 
 </body>
 </html>
