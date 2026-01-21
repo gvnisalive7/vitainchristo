@@ -1,161 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vita in Christo</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Februari 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: Inter, sans-serif;
       background: #f5f7fa;
-      color: #1f2937;
-    }
-
-    header {
-      background: white;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    header h1 {
       margin: 0;
-      font-weight: 600;
+      padding: 2rem;
     }
 
-    header p {
-      margin-top: 0.5rem;
-      color: #6b7280;
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
-    main {
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-
-    .grid {
+    .weeks {
+      max-width: 500px;
+      margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1.5rem;
+      gap: 1rem;
     }
 
-    .month {
-      background: white;
-      border-radius: 12px;
-      padding: 2rem;
+    .week {
+      padding: 1rem;
+      border-radius: 10px;
       text-align: center;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .month:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-    }
-
-    .month h2 {
-      margin: 0;
-      font-size: 1.2rem;
       font-weight: 500;
+      text-decoration: none;
     }
 
-    .year {
-      font-size: 0.9rem;
-      color: #6b7280;
-      margin-top: 0.3rem;
+    .available {
+      background: white;
+      color: #111827;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #6b7280;
+    .available:hover {
+      background: #e5e7eb;
+    }
+
+    .unavailable {
+      background: #e5e7eb;
+      color: #9ca3af;
+      cursor: not-allowed;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Vita in Christo</h1>
-    <p>Renungan harian · Edisi 2026</p>
-  </header>
+  <h1>Februari 2026</h1>
 
-  <main>
-    <div class="grid">
+  <div class="weeks">
 
-      <a href="january/index.html" class="month">
-        <h2>January</h2>
-        <div class="year">2026</div>
-      </a>
+    <!-- Week 1 ADA -->
+    <a class="week available" href="../pdf/2026februari1.pdf" target="_blank">
+      Week 1
+    </a>
 
-      <a href="february/index.html" class="month">
-        <h2>February</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="march/index.html" class="month">
-        <h2>March</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="april/index.html" class="month">
-        <h2>April</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="may/index.html" class="month">
-        <h2>May</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="june/index.html" class="month">
-        <h2>June</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="july/index.html" class="month">
-        <h2>July</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="august/index.html" class="month">
-        <h2>August</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="september/index.html" class="month">
-        <h2>September</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="october/index.html" class="month">
-        <h2>October</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="november/index.html" class="month">
-        <h2>November</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="december/index.html" class="month">
-        <h2>December</h2>
-        <div class="year">2026</div>
-      </a>
-
+    <!-- Week 2 BELUM ADA -->
+    <div class="week unavailable">
+      Week 2 (Unavailable)
     </div>
-  </main>
 
-  </footer>
+    <div class="week unavailable">
+      Week 3 (Unavailable)
+    </div>
+
+    <div class="week unavailable">
+      Week 4 (Unavailable)
+    </div>
+
+  </div>
 
 </body>
 </html>
