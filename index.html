@@ -1,166 +1,205 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vita in Christo</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vita in Christo</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f5f7fa;
-      color: #1f2937;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    header {
-      background: white;
-      padding: 2.5rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid #e5e7eb;
-    }
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
 
-    header h1 {
-      margin: 0;
-      font-weight: 600;
-      font-size: 2rem;
-    }
+/* HEADER */
+header {
+  background: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
 
-    header p {
-      margin-top: 0.6rem;
-      color: #6b7280;
-      font-size: 1rem;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
 
-    main {
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
+header h2 {
+  margin: .4rem 0 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6b7280;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1.6rem;
-    }
+header p {
+  margin-top: .5rem;
+  color: #6b7280;
+}
 
-    .month {
-      background: white;
-      border-radius: 14px;
-      padding: 2.2rem 1rem;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
+/* MAIN LAYOUT */
+main {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
 
-    .month:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.1);
-    }
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+}
 
-    .month h2 {
-      margin: 0;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
+/* LEFT IMAGE (9:16) */
+.cover {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  aspect-ratio: 9 / 16;
+}
 
-    .year {
-      margin-top: 0.4rem;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.85rem;
-      color: #6b7280;
-    }
-  </style>
+/* RIGHT CONTENT */
+.months {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* FIRST ROW */
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+/* SECOND ROW */
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+/* CARD */
+.month {
+  background: white;
+  border-radius: 14px;
+  padding: 1.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+  transition: .25s ease;
+}
+
+.month:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.1);
+}
+
+.month h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.year {
+  margin-top: .3rem;
+  font-size: .85rem;
+  color: #6b7280;
+}
+
+.disabled h3 {
+  color: gray;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: .85rem;
+  color: #6b7280;
+}
+
+/* MOBILE */
+@media(max-width: 900px){
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .top-row,
+  .bottom-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Vita in Christo</h1>
-    <h2>Written by: Givin</h2>
-    <p>Santapan Harian Homili Bagi Anak Muda- Edisi 2026</p>
-  </header>
+<header>
+  <h1>Vita in Christo</h1>
+  <h2>Written by: Givin</h2>
+  <p>Santapan Harian Homili Bagi Anak Muda – Edisi 2026</p>
+</header>
 
-  <main>
-    <div class="grid">
+<main>
 
-      <a href="pdf/jan2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Januari - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
+<div class="layout">
+
+  <!-- LEFT IMAGE -->
+  <div class="cover">
+    <img src="images/cover.jpg" alt="Cover">
+  </div>
+
+  <!-- RIGHT MONTHS -->
+  <div class="months">
+
+    <div class="top-row">
+      <a class="month disabled"><h3>Januari</h3><div class="year">2026</div></a>
 
       <a href="pdf/feb2026-r2.pdf" class="month" target="_blank">
-        <h2>Februari - Ongoing</h2>
-        <div class="year">2026</div>
+        <h3>Februari</h3><div class="year">2026</div>
       </a>
 
-      <a href="pdf/mar2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Maret - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/apr2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">April - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/mei2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Januari - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/jun2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Juni - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/jul2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Juli - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/agu2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Agustus - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/sep2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">September - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/okt2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Oktober - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/nov2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">November - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
-      <a href="pdf/des2026.pdf" class="month" target="_blank">
-        <h2 style="color: gray;">Desember - Tidak Tersedia</h2>
-        <div class="year">2026</div>
-      </a>
-
+      <a class="month disabled"><h3>Maret</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>April</h3><div class="year">2026</div></a>
     </div>
-  </main>
 
-  <footer>
-    © 2026 Vita in Christo · Semua untuk kemuliaan Allah
-  </footer>
+    <div class="bottom-row">
+      <a class="month disabled"><h3>Mei</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>Juni</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>Juli</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>Agustus</h3><div class="year">2026</div></a>
+
+      <a class="month disabled"><h3>September</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>Oktober</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>November</h3><div class="year">2026</div></a>
+      <a class="month disabled"><h3>Desember</h3><div class="year">2026</div></a>
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+© 2026 Vita in Christo · Semua untuk kemuliaan Allah
+</footer>
 
 </body>
 </html>
